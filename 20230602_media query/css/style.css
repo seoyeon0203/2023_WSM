@@ -8,10 +8,10 @@ body{
         background-color: magenta;
     }
 }
-
+/* mobile */
 @media screen and (max-width: 540px) {
     body{
         background-color:yellow;
     }
 }
-/* mobilet */
+
