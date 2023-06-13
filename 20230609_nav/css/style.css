@@ -61,11 +61,11 @@ nav{
 }
 
 /* tablet */
-@media screen and(max-width: 720px){
+@media screen and (max-width: 720px){
 
 }
 /*  mobile */
-@media screen and(max-width:540px) {
+@media screen and (max-width:540px) {
     /* .nav-logo 가운데 */
     .nav-logo{
         margin: 0 auto;
