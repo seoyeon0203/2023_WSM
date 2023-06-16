@@ -15,13 +15,8 @@ const navListUl = document.getElementsByClassName("nav-list")[0];
 // 2. Event Handling
 // 햄버거메뉴 클릭하면, 햄버거메뉴 i "bi bi-list<-> X "bi bi -x-lg"
 // 햄버거메뉴 클릭하면, .nav-list에 .show-menu 보여주기 <-> 안 보여주기
-nav_toggle.onclick =  () =>  alert("안녕");
-nav_toggle.onclick =   alert("안녕");
-
-
-
-
-
+nav_toggle.onclick =  () =>  alert("안녕"); //   ok 익명함수(람다식)
+// nav_toggle.onclick =   alert("안녕"); // not ok
 
 // ---------------------------------
 // HTML -> js
