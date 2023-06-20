@@ -85,6 +85,7 @@ nav{
         backdrop-filter: blur(8px); /* blur 효과*/
         height: 0;
         overflow: hidden;
+        transition:20s;
 
     }
     .nav-item{
