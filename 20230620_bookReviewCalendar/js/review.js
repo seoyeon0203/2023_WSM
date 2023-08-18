@@ -41,6 +41,9 @@ const titleDiv = document.getElementsByClassName("title")[1];
 // const titleDiv = document.querySelectorAll(".title");
 //js 변수.innerHTML
 titleDiv.innerHTML = title;
+// titleDiv에 title속성에 값으로 변수 title을 넣자
+// titleDiv.title = title
+titleDiv.setAttribute("title", title);
 
 const authorDiv = document.getElementsByClassName("author")[1];
 authorDiv.innerHTML = author;
