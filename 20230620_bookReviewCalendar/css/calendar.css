@@ -39,6 +39,9 @@ main {
   display: grid; /* 글자 수평 수직 가운데*/
   place-items: center; /* 글자 수평 수직 가운데*/
 }
+.date.item:nth-child(1) {
+  grid-column-start: 6;
+}
 .review.flex-container {
   display: flex;
   flex-direction: column;
