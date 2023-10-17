@@ -12,12 +12,10 @@ const setCalendar = (year, month) => {
   titleMonthDiv.innerHTML = `${month}월`;
 
   // 1~해당 월의 마지막 날짜까지 날짜 div 만들자
-  // datesContainerDiv의 자식들(dateItemDiv) clear
-
-  // while(datesContainerDiv.firstChild){
-  //   datesContainerDiv.removeChild(datesContainerDiv.firstChild);
+  //datesContainerDiv의 자식들(dateItemDiv) clear
+  // while (datesContainerDiv.firstChild) {
+  //     datesContainerDiv.removeChild(datesContainerDiv.firstChild);
   // }
-
   // datesContainerDiv.innerHTML = "";
   datesContainerDiv.replaceChildren();
 
@@ -39,7 +37,7 @@ const setCalendar = (year, month) => {
   let firstDateDay = new Date(year, month - 1, 1).getDay();
   firstDateDiv.style.gridColumnStart = firstDateDay + 1;
 
-  // 토요일: 파란색으로 글자로
+  // 토요일: 파란색으로 글자로: 토요일 첫날 = 7 - 이달의 1일 요일
   let saturdayFirstDate = 7 - firstDateDay; //5 -> 2, 2 -> 5, 6 -> 1
   let saturdayDivs = datesContainerDiv.querySelectorAll(
     `.date.item:nth-child(7n+${saturdayFirstDate})`
@@ -60,7 +58,7 @@ const setCalendar = (year, month) => {
 };
 setCalendar(year, month);
 
-// <: 이전 달
+// <: 이전달
 const leftDiv = document.getElementsByClassName("left")[0];
 leftDiv.onclick = () => {
   month--;
@@ -71,7 +69,7 @@ leftDiv.onclick = () => {
 };
 //leftDiv.addEventListener("click", () => console.log("이전달"));
 
-// >: 이후 달
+// >: 이후달
 let rightDiv = document.getElementsByClassName("right")[0];
 rightDiv.onclick = () => {
   month++;
